@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <!-- Now we are using materialize css instead of bootstrap. To do this, first download amterialize from google searching "materialize css", then "getting started", then grab the css link you see when you scroll down, alongside and paste here as we have done below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Now we need font awesome too, so we google search "font awesome cdn" and then click on the first link that says 'Font Awesome - Bootstrap..." adn then click on the dropdwon button of the first page you see, and then copy the first html clipboard and paste right here as we have done...  -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Task List</title>
+</head>
+<body>
+    <!-- This project is created with live server as we ahve installed it to out vscode ide, so make sure it running, so we can view our work in the browser with all the external links working fine. To start live server, click on the 'Go Live' option in the vscode task bar below. -->
+
+    <!-- We have also made some changes to ou ide by enabling for example, wordWrap, which allows us to see all of our code and for the ide to wrap with the screen size. This setting and others can be found at the ide top bar, click 'Edit', then 'Preferences', then 'Settings' and you'll see all the setting and you can deal with any as you wish. -->
+     <div class="container">
+         <div class="row">
+             <div class="col s12">
+                 <div id="main" class="card">
+                     <div class="card-content">
+                         <span class="cart-title">Task List</span>
+                         <div class="row">
+                             <form id="task-form">
+                                 <div class="input-field col s12">
+                                     <input type="text" name="task" id="task">
+                                     <label for="task">New Task</label>
+                                 </div>
+                                 <input type="submit" value="Add Task" class="btn">
+                             </form>
+                         </div>
+                     </div>
+                     <div class="card-action">
+                         <h5 id="task-title">Tasks</h5>
+                         <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter Tasks</label>
+                         </div>
+                         <ul class="collection"></ul>
+                         <a href="#" class="clear-tasks btn black">Clear Tasks</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    
+    
+    
+ 
+
+    <!-- Materialize css uses jquery as dependency, so we have to google search jquery cdn and then get the latest uncompressed version and grab the jquery code and make sure you paste it right above your javascript code copied from your materialize css as we have done below: -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Again, from the materialize css explanation above, we also grabbed this javascript file that was right next to the materialize css and pasted it here. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
